@@ -6,8 +6,24 @@ import ErrorToast from './components/ErrorToast';
 import StatusBar from './components/StatusBar';
 
 function App() {
+    // Disable right click context menu
+    React.useEffect(() => {
+        const handleContextMenu = (e) => {
+            e.preventDefault();
+        };
+        document.addEventListener('contextmenu', handleContextMenu);
+        return () => {
+            document.removeEventListener('contextmenu', handleContextMenu);
+        };
+    }, []);
+
     return (
         <div className="app-container">
+            {/* Watermark */}
+            <div className="watermark-overlay">
+                © 2024 - Motor Simülasyonu - By Arda
+            </div>
+
             {/* Çalışma Alanı */}
             <WorkCanvas />
 

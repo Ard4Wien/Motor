@@ -917,11 +917,34 @@ body {
 .power-label {
     position: absolute;
     bottom: 3px;
-    left: 50%;
     transform: translateX(-50%);
     font-size: 9px;
     font-weight: 500;
     color: var(--text-secondary);
+}
+
+/* ===== Watermark ===== */
+.watermark-overlay {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 1000;
+    user-select: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+    .watermark-overlay {
+        font-size: 10px;
+        bottom: 5px;
+        left: 10px;
+        opacity: 0.5;
+    }
 }
 
 /* ===== Mobile Toggle Button (Only visible on mobile) ===== */
