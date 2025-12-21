@@ -923,3 +923,152 @@ body {
     font-weight: 500;
     color: var(--text-secondary);
 }
+
+/* ===== Mobile Toggle Button (Only visible on mobile) ===== */
+.mobile-toolbox-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-panel);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 200;
+    box-shadow: var(--shadow-panel);
+    transition: all 0.2s ease;
+}
+
+.mobile-toolbox-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Mobile overlay */
+.mobile-overlay {
+    display: none;
+}
+
+/* ===== Mobile Responsive Styles ===== */
+@media screen and (max-width: 768px) {
+
+    /* Show mobile toggle button */
+    .mobile-toolbox-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mobile overlay */
+    .mobile-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+    }
+
+    /* Hide toolbox by default on mobile */
+    .toolbox {
+        display: none;
+        top: 80px;
+        right: 10px;
+        width: calc(100vw - 20px);
+        max-width: 300px;
+        max-height: 60vh;
+        overflow-y: auto;
+        z-index: 150;
+    }
+
+    /* Show toolbox when mobile-open class is added */
+    .toolbox.mobile-open {
+        display: block;
+    }
+
+    /* Control Panel adjustments for mobile */
+    .control-panel {
+        top: 10px;
+        left: 10px;
+        padding: 12px;
+        min-width: 150px;
+    }
+
+    .control-panel h2 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .control-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    /* Status Bar - Responsive */
+    .status-bar {
+        width: calc(100% - 40px);
+        max-width: 400px;
+        padding: 8px 12px;
+        gap: 10px;
+        bottom: 10px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .status-item {
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .status-indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Smaller circuit elements on mobile */
+    .circuit-element {
+        transform: scale(0.85);
+        transform-origin: top left;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .control-panel {
+        min-width: auto;
+        padding: 10px;
+    }
+
+    .control-panel h2 {
+        font-size: 11px;
+    }
+
+    .control-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .status-bar {
+        padding: 6px 10px;
+        gap: 8px;
+    }
+
+    .status-item {
+        font-size: 10px;
+    }
+
+    .mobile-toolbox-toggle {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+}
