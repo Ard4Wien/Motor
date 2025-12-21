@@ -60,7 +60,6 @@ npm run deploy
 
 ## 👨‍💻 Hazırlayan (By)
 **Arda** - *Motor Similasyonu Projesi*
-**Instagram: arda.ozby0**
 ---
 
 > [!TIP]
