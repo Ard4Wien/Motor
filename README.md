@@ -1,8 +1,6 @@
-# ⚙️ Motor Control Simulator
+# ⚙️ Motor Kontrol Simulator
 
-A modern, interactive, and visually rich electrical circuit simulator focused on motor control logic. Built with React and Framer Motion for a premium laboratory experience.
-
-🚀 **Live Demo:** [https://ard4wien.github.io/motor/](https://ard4wien.github.io/motor/)
+🚀 **Site** [https://ard4wien.github.io/motor/](https://ard4wien.github.io/motor/)
 
 ---
 
