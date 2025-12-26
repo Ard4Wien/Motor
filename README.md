@@ -1,4 +1,4 @@
-# ⚙️ Motor Kontrol Simulator
+# ⚙️ Motor Kontrol Simülatörü
 
 🚀 **Site** [https://ard4wien.github.io/motor/](https://ard4wien.github.io/motor/)
 
