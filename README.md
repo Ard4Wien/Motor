@@ -31,7 +31,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 1. Depoyu klonlayın:
    ```bash
-   git clone https://github.com/Ard4Wien/motor.git
+   git clone https://github.com/Ard4Wien/Motor.git
    ```
 2. Proje dizinine gidin:
    ```bash
