@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found</title>
+  <script>
+    // Single Page Apps for GitHub Pages
+    // Redirect to index.html with the current path
+    var path = window.location.pathname;
+    var repo = '/Motor'; // Check this matches your base path
+    if (path.startsWith(repo)) {
+      // Keeps the path after the repo name
+      window.location.href = repo + '/?p=' + path.substring(repo.length);
+    } else {
+      window.location.href = repo + '/';
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Redirecting...</h1>
+</body>
+
+</html>
