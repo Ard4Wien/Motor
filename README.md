@@ -35,7 +35,7 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
    ```
 2. Proje dizinine gidin:
    ```bash
-   cd motor
+   cd Motor
    ```
 3. Bağımlılıkları yükleyin:
    ```bash
