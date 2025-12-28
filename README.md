@@ -1,6 +1,6 @@
 # ⚙️ Motor Kontrol Simülatörü
 
-🚀 **Site** [https://ard4wien.github.io/motor/](https://ard4wien.github.io/motor/)
+🚀 **Site** [https://ard4wien.github.io/Motor/](https://ard4wien.github.io/Motor/)
 
 ---
 
